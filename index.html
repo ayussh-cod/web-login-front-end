@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Login Form Design</title>
+     <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Login Here</h2>
+        <form>
+            <div class="input-group">
+            <label>Username</label>
+            <input id="user" type="text">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input id="Pass" type="password">
+        </div>
+        
+            <button  type="submit" onclick="validate()">Submit &#10132;</button>
+        </form>
+        <p>Login with social media account</p>
+        <div class="social">
+            <img src="facebook.JPG" alt="">
+            <img src="google.JPG" alt="">
+            <img src="twitter.JPG" alt="">
+        </div>
+    </div>
+    <script>
+        function validate(){
+        var user=document.getElementById("user").value;
+        var pass=document.getElementById("Pass").value;
+            if(user=="admin"&&pass=="user")
+            {
+                alert("logged in");
+                return false;
+            }
+            else
+            {
+                alert("can not log in ");
+            return true;
+            }
+    }
+    </script>
+</body>
+</html>
